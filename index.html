@@ -21,9 +21,9 @@
    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
      <div class="navbar-nav">
        <a class="nav-item nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
-       <a class="nav-item nav-link" href="#buy.html">Buy</a>
-       <a class="nav-item nav-link" href="#sell.html">Sell</a>
-       <a class="nav-item nav-link" href="#contact.html">Contact</a>
+       <a class="nav-item nav-link" href="buy.html">Buy</a>
+       <a class="nav-item nav-link" href="sell.html">Sell</a>
+       <a class="nav-item nav-link" href="contact.html">Contact</a>
      </div>
      </div>
    </div>
@@ -31,19 +31,98 @@
   <!-- /navbar-->
  <!--jumbotron -->
  <div class="jumbotron jumbotron-fluid text-white bg-secondary">
-  <div class="container text-sm-center pt-5">
+  <div class="container text-sm-center custom-heading">
     <h1 class="display-3">Welcome to the Auction World</h1>
     <p class="lead">Experience the thrill of a busy live auction. The environment is fun, there's nothing quite like it!</p>
       <!--buttons -->
      <div class="btn-group mt-4 " role="group" aria-label="Callout buttons">
     <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#join">Join now!</button>
-<button type="button" class="btn btn-danger btn-lg">Log in!</button>
+<button type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#login">Log in!</button>
 </div>
   </div>
 </div>
 <!--/jumbotron -->
+
+  <div class="container pt-4"> <!-- container -->
+<!--about-->
+    <div class="row">
+      <div class="col-lg order-lg-2">
+        <h3 class="mb-4">About Auction World</h3>
+        <img class="mb-4 img-fluid rounded d-none d-sm-block" src="img/store.jpg" alt="Store">
+<p>We are focused exclusively on the sale of residential bank-owned and foreclosure properties. bid, win and close with confidence.</p>
+<p>Our auction buying process is simple, efficient, and transparent. Find Your Properties. Search, track and research your properties. </p>
+<p>Start Bidding. Bid at live and online auctions. Win the Auction.</p>
+      </div>
+
+      <div class="col-lg order-lg-1">
+        <h3 class="mb-4">Online Auction History</h3>
+  <p>Online auctions were taking place even before the release of the first web browser for personal computers, NCSA Mosaic.
+    Instead of users selling items through the Web they were instead trading through text-based newsgroups and email discussion lists.</p>
+  <p>  However, the first Web-based commercial activity regarding online auctions that made significant sales began in May 1995
+    with the company Onsale. In September that same year eBay also began trading. Both of these companies used ascending bid.
+    The Web offered new advantages such as the use of automated bids via electronic forms, a search engine to be able to quickly find items
+    and the ability to allow users to view items by categories.</p>
+      </div>
+
+      <div class="col-lg order-lg-3">
+        <h3 class="mb-4">What we sell</h3>
+  <div class="list-group">
+    <a href="#" class="list-group-item list-group-item-action"><strong>Food & Drinks</strong>: Wine, beer, lobsters...</a>
+    <a href="#" class="list-group-item list-group-item-action"><strong>Sports & Outdoors</strong>: Sport equipment...</a>
+    <a href="#" class="list-group-item list-group-item-action"><strong>Arts & Crafts</strong>: Paintings, crafts...</a>
+    <a href="#" class="list-group-item list-group-item-action"><strong>Home & Decor</strong>: Furniture, decorations...</a>
+    <a href="#" class="list-group-item list-group-item-action"><strong>Health & Beauty</strong>: Make up, brushes...</a>
+  </div>
+      </div>
+    </div> <!-- /About-->
+
+    <button type="button" class="btn btn-outline-dark btn-lg d-block mx-auto my-5" data-toggle="modal" data-target="#join">Do you like us? Join Now!</button>
+  </div> <!-- /container -->
+    <!-- footer -->
+    <footer class = "bg-dark text-light mt-4 py-4">
+      <div class = "container">
+  <div class="row py-3">
+  <div class="col-md-7">
+
+  <ul class="nav">
+  <li class="nav-item">
+  <a class="nav-link text-light" href="#">Community</a>
+  </li>
+  <li class="nav-item">
+  <a class="nav-link text-light" href="#">Sponsors</a>
+  </li>
+  <li class="nav-item">
+
+
+  <div class="btn-group dropup">
+  <button type="button" class="btn btn-outline-light">Our partners</button>
+  <button type="button" class="btn btn-outline-light dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  <span class="sr-only">Toggle Dropdown</span>
+  </button>
+  <div class="dropdown-menu">
+  <a class="dropdown-item" href="#">Real-estate World</a>
+  <a class="dropdown-item" href="#">Travel World</a>
+  <a class="dropdown-item" href="#">Business World</a>
+  <a class="dropdown-item" href="#">Economy World</a>
+  </div>
+  </div>
+
+  </li>
+  </ul>
+
+  </div>
+  <div class="col-md text-md-right">
+  <small>&copy; 2018 Auction World &amp; Matija Rabuzin</small>
+  </div>
+  </div>
+  </div>  <!-- /container -->
+  </footer>
+    <!-- /footer -->
+
+
+
 <!--=====================================
-     FORM MODAL
+     FORM MODAL JOIN
     =====================================-->
     <div class="modal" id ="join" tabindex="-1" role="dialog">
   <div class="modal-dialog" role="document">
@@ -58,46 +137,184 @@
       <div class="modal-body">
         <form>
   <div class="form-group">
-    <label for="exampleInputEmail1">Email address</label>
+    <label for="exampleInputEmail1">Email address:</label>
     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
     <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
   </div>
   <div class="form-group">
-    <label for="exampleInputPassword1">Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+    <label for="password1">Password:</label>
+    <input type="password" class="form-control" id="password1" placeholder="Password">
   </div>
   <div class="form-group">
-    <label for="exampleInputPassword1">Repeat Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Repeat Password">
+    <label for="password2">Repeat Password:</label>
+    <input type="password" class="form-control" id="password2" placeholder="Repeat Password">
   </div>
+<div class="form-group">
+  <label for="role">Are you buyer, seller or both?</label>
+    <select class=" custom-select form-control" id="role">
+    <option value="back end developer">Buyer</option>
+    <option value="designer">Seller</option>
+    <option value="student">Both</option>
+  </select>
+ </div>
+ <hr class ="my-4">
+
+ <h5 class= "mb-4">Which Categories Interest You Most?</h5>
+
+<div class="form-check">
+  <label class="custom-control custom-checkbox">
+<input type="checkbox" class="custom-control-input">
+<span class="custom-control-indicator"></span>
+<span class="custom-control-description">Food & Drinks</span>
+</label>
+</div>
+
   <div class="form-check">
-    <label class="custom-control custom-checkbox">
+  <label class="custom-control custom-checkbox">
+<input type="checkbox" class="custom-control-input">
+<span class="custom-control-indicator"></span>
+<span class="custom-control-description">Sports & Outdoors</span>
+</label>
+</div>
+
+
+<div class="form-check">
+  <label class="custom-control custom-checkbox">
+<input type="checkbox" class="custom-control-input">
+<span class="custom-control-indicator"></span>
+<span class="custom-control-description">Arts & Crafts</span>
+</label>
+</div>
+
+
+ <div class="form-check">
+  <label class="custom-control custom-checkbox">
+<input type="checkbox" class="custom-control-input">
+<span class="custom-control-indicator"></span>
+<span class="custom-control-description">Home & Decor</span>
+</label>
+</div>
+
+ <div class="form-check">
+  <label class="custom-control custom-checkbox">
+<input type="checkbox" class="custom-control-input">
+<span class="custom-control-indicator"></span>
+<span class="custom-control-description">Health & Beauty</span>
+</label>
+</div>
+
+<hr class="my-4">
+
+<h5 class="mb-4">Payment Info</h5>
+
+<div class="form-row">
+<div class="col-lg-6 form-group">
+<label for="cc-num">Card Number:</label>
+<input class="form-control" id="cc-num" type="text">
+</div>
+
+<div class="col-lg form-group">
+<label for="zip">Zip Code:</label>
+<input class="form-control" id="zip" type="text">
+</div>
+
+<div class="col-lg form-group">
+<label for="cvv">CVV:</label>
+<input class="form-control" id="cvv" type="text">
+</div>
+</div>
+
+<div class="form-row">
+<label class="col-lg-12">Expiration date</label>
+
+<div class="form-group col-lg-8">
+<select class="custom-select form-control" id="exp-month">
+<option value="1">1 - January</option>
+<option value="2">2 - February</option>
+<option value="3">3 - March</option>
+<option value="4">4 - April</option>
+<option value="5">5 - May</option>
+<option value="6">6 - June</option>
+<option value="7">7 - July</option>
+<option value="8">8 - August</option>
+<option value="9">9 - September</option>
+<option value="10">10 - October</option>
+<option value="11">11 - November</option>
+<option value="12">12 - December</option>
+</select>
+</div>
+
+<div class="form-group col-lg">
+
+<select class="custom-select form-control" id="exp-year">
+  <option value="2018">2018</option>
+  <option value="2019">2019</option>
+  <option value="2020">2020</option>
+  <option value="2021">2021</option>
+  <option value="2022">2022</option>
+</select>
+</div>
+</div>
+<hr class="my-4">
+ <div class="form-check">
+   <label class="custom-control custom-checkbox">
 <input type="checkbox" class="custom-control-input">
 <span class="custom-control-indicator"></span>
 <span class="custom-control-description">I've read and accept the terms and conditions</span>
 </label>
 </div>
-<div class="form-group">
-  <label for="role">Are you buyer, seller or both?</label>
-    <select class=" custom-select form-control" id="role">
-  <option value="full stack js developer">Full Stack JavaScript Developer</option>
-    <option value="front end developer">Front End Developer</option>
-    <option value="back end developer">Back End Developer</option>
-    <option value="designer">Designer</option>
-    <option value="student">Student</option>
-  </select>
- </div>
-  <button type="submit" class="btn btn-dark">Submit</button>
+<div class="form-check">
+  <label class="custom-control custom-checkbox">
+<input type="checkbox" class="custom-control-input">
+<span class="custom-control-indicator"></span>
+<span class="custom-control-description">I would like to receive notifications on my email</span>
+</label>
+</div>
+  <button type="submit" class="btn btn-dark btn-lg">Join</button>
 </form>
 </div>
 
 <!-- /modal body -->
-      <div class="modal-footer">
-
-      </div>
     </div>
   </div>
 </div>
+
+<!--=====================================
+     FORM MODAL LOGIN
+    =====================================-->
+    <div class="modal" id="login" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-dark text-white">
+        <h5 class="modal-title">Login!</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <!--Modal body -->
+      <div class="modal-body">
+        <form>
+
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address:</label>
+            <input type="email" class="form-control" id="exampleInputEmail2" aria-describedby="emailHelp" placeholder="Enter email">
+            <small id="emailHelp2" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+          <div class="form-group">
+            <label for="password1">Password:</label>
+            <input type="password" class="form-control" id="password3" placeholder="Password">
+          </div>
+          <div>
+            <a class="forgot-password" href="#">Forgot email/password?</a>
+          </div>
+            <button type="submit" class="btn btn-dark btn-lg mt-4">Login</button>
+        </form>
+      </div>
+        <!--/Modal body -->
+    </div>
+  </div>
+</div>
+
  <!-- Optional JavaScript -->
  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

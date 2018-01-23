@@ -8,6 +8,25 @@
     opacity: .2;
 }
 
-.custom-control {
-  color: black;
+.jumbotron {
+  background-image: url(img/online-store.png);
+  background-size:cover;
+}
+
+.custom-heading {
+  padding-top:139px;
+}
+
+.dropdown-menu a:hover {
+  background-color: black;
+  color: white;
+}
+
+.bid-button {
+  width: 100%;
+  
+}
+
+.card-hght {
+  height: 381px;
 }
