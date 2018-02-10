@@ -1,3 +1,9 @@
+/*
+ *  Custom styles
+ */
+body {
+  background-color: #f7f7f7;
+}
 .close {
     color: #fff;
     opacity: 1;
@@ -24,9 +30,55 @@
 
 .bid-button {
   width: 100%;
-  
+  vertical-align: bottom;
 }
 
 .card-hght {
   height: 381px;
 }
+
+/*
+ *  Card scrollbar
+ */
+ .scrollable {
+     height: 230px;
+     overflow: hidden;;
+ }
+
+ .scrollable:hover {
+   overflow-y: auto;
+ }
+
+ .scrollable::-webkit-scrollbar-track
+ {
+ 	border: 1px solid black;
+ 	background-color: #F5F5F5;
+ }
+
+ .scrollable::-webkit-scrollbar
+ {
+ 	width: 10px;
+ 	background-color: #F5F5F5;
+ }
+
+ .scrollable::-webkit-scrollbar-thumb
+ {
+ 	background-color: #000000;
+ }
+
+ /*
+  *  Carusel
+  */
+
+  #items-carousel {
+    height: 300px;
+    width:500px;
+  }
+
+  .carousel-indicators li {
+    background-color:black;
+  }
+
+  .carousel-indicators .active {
+      background-color:grey;
+  }

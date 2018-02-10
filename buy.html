@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
   </head>
-  <body id="home" data-spy="scroll" data-target=".navbar" data-offset="100">
+  <body id="buy" data-spy="scroll" data-target=".navbar" data-offset="100">
     <!-- navbar-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
@@ -20,8 +20,8 @@
    </button>
    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
      <div class="navbar-nav">
-       <a class="nav-item nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-       <a class="nav-item nav-link" href="buy.html">Buy</a>
+       <a class="nav-item nav-link" href="index.html">Home </a>
+       <a class="nav-item nav-link" href="#buy">Buy <span class="sr-only">(current)</span></a>
        <a class="nav-item nav-link" href="sell.html">Sell</a>
        <a class="nav-item nav-link" href="contact.html">Contact</a>
      </div>
@@ -39,24 +39,39 @@
 
 <div class="card mb-3">
 <img class="card-img-top" src="img/got.png" alt="GOT">
-<div class="card-body card-hght">
+<div class="card-body card-hght d-flex flex-column">
 <h4 class="card-title">A Song of Ice and Fire</h4>
-<p class="card-text">A Song of Ice and Fire is a series of epic fantasy novels by the American novelist and screenwriter George R. R. Martin. It takes place on the fictional continents Westeros and Essos. The point of view of each chapter in the story is a limited perspective of a range of characters growing from nine, in the first novel, to thirty-one by the fifth.</p>
-  <button type="submit" class="btn btn-dark btn-lg mt-4 bid-button align-bottom">Bid</button>
+<div class ="scrollable">
+<p class="card-text">A Song of Ice and Fire is a series of epic fantasy novels by the American novelist and screenwriter George R. R. Martin.
+   It takes place on the fictional continents Westeros and Essos. The point of view of each chapter in the story is a limited perspective of
+   a range of characters growing from nine, in the first novel, to thirty-one by the fifth.
+ </p>
+ <p>
+   A Song of Ice and Fire is a series of epic fantasy novels by the American novelist and screenwriter George R. R. Martin.
+      It takes place on the fictional continents Westeros and Essos. The point of view of each chapter in the story is a limited perspective of
+      a range of characters growing from nine, in the first novel, to thirty-one by the fifth.
+ </p>
+</div>
+  <button type="submit" class="btn btn-dark btn-lg mt-4 bid-button mt-auto" data-toggle="modal" data-target="#bid1">Bid</button>
 
 </div>
 </div>
 
 </div>
 
-<div class="col-md-6 col-lg-4">
+<div class="col-md-6 col-lg-4 ">
 
 <div class="card mb-3">
 <img class="card-img-top" src="img/honor6x.png" alt="Honor 6x">
-<div class="card-body card-hght">
+<div class="card-body card-hght d-flex flex-column">
 <h4 class="card-title">Honor 6X</h4>
-<p class="card-text">Honor continues to make great phones for a lot less money than you'd expect – but is the Honor 6X the phone you should buy in 2018? Yes it is! The build quality is fantastic and it does sit as comfortably in the hand as the Honor 8 or Huawei Mate 9. If you thinking about buying phone, this one is excellent choice!</p>
-  <button type="submit" class="btn btn-dark btn-lg mt-4 bid-button align-bottom">Bid</button>
+<div class ="scrollable">
+<p class="card-text">Honor continues to make great phones for a lot less money than you'd expect – but is the Honor 6X the phone you should
+  buy in 2018? Yes it is! The build quality is fantastic and it does sit as comfortably in the hand as the Honor 8 or Huawei Mate 9. If you
+   thinking about buying phone, this one is excellent choice!</p>
+ </div>
+
+  <button type="submit" class="btn btn-dark btn-lg mt-4 bid-button mt-auto" data-toggle="modal" data-target="#bid1">Bid</button>
 
 </div>
 </div>
@@ -66,39 +81,21 @@
 <div class="col-md-6 col-lg-4">
 
 <div class="card mb-3">
-<img class="card-img-top" src="img/robbie.png" alt="Robbie">
-<div class="card-body">
-<h4 class="card-title">Robbie Redux</h4>
-<p class="card-text">Robbie is a JavaScript developer working on large-scale applications. He's also a teacher who strives to support students in removing barriers to learning code.</p>
-  <button type="submit" class="btn btn-dark btn-lg mt-4 bid-button">Bid</button>
-
+<img class="card-img-top" src="img/horizon.png" alt="PS4 Horizon: Zero Dawn">
+<div class="card-body card-hght d-flex flex-column">
+<h4 class="card-title">Horizon: Zero Dawn  (PS4)</h4>
+<div class ="scrollable">
+<p class="card-text">Horizon Zero Dawn is an action role-playing video game developed by Guerrilla Games and published by Sony Interactive
+  Entertainment. The plot revolves around Aloy, a hunter living in a post-apocalyptic world overrun by hostile robots, where the remains of
+  humanity have regrouped into tribal factions. Having been an outcast from her tribe her whole life, Aloy sets out to discover the reasons why.
+ </p>
+ <p>
+    The game features an open world environment for Aloy to explore, while undertaking side and main story quests. The player uses a spear,
+    ranged weapons, and stealth tactics to combat the mechanised creatures called Machines, whose remains can be looted for resources.
+    A skill tree provides the player with new abilities and passive bonuses. It was released for the PlayStation 4 in early 2017.
+ </p>
 </div>
-</div>
-
-</div>
-
-<div class="col-md-6 col-lg-4">
-
-    <div class="card mb-3">
-<img class="card-img-top" src="img/ecma.png" alt="Ecma">
-<div class="card-body">
-<h4 class="card-title">Ecma Scriptnstuff</h4>
-<p class="card-text">Ecma found her passion for programming and teaching over 15 years ago. She is excited to introduce you to all of the wonders of JavaScript.</p>
-  <button type="submit" class="btn btn-dark btn-lg mt-4 bid-button">Bid</button>
-
-</div>
-</div>
-
-    </div>
-
-<div class="col-md-6 col-lg-4">
-
-<div class="card mb-3">
-<img class="card-img-top" src="img/jay.png" alt="Jay">
-<div class="card-body">
-<h4 class="card-title">Jay Query</h4>
-<p class="card-text">Jay is a developer, author of CSS: The Missing Manual, JavaScript &amp; jQuery: The Missing Manual, and web development teacher.</p>
-  <button type="submit" class="btn btn-dark btn-lg mt-4 bid-button">Bid</button>
+  <button type="submit" class="btn btn-dark btn-lg mt-4 bid-button mt-auto" data-toggle="modal" data-target="#bid1">Bid</button>
 
 </div>
 </div>
@@ -108,11 +105,65 @@
 <div class="col-md-6 col-lg-4">
 
 <div class="card mb-3">
-<img class="card-img-top" src="img/json.png" alt="Json">
-<div class="card-body">
-<h4 class="card-title">Json Babel</h4>
-<p class="card-text">All of his professional life, Json has worked with computers online; he is a polyglot programmer and likes using the right tools for the job.</p>
-  <button type="submit" class="btn btn-dark btn-lg mt-4 bid-button">Bid</button>
+<img class="card-img-top" src="img/gamepad.png" alt="PS4 Gamepad">
+<div class="card-body card-hght d-flex flex-column">
+<h4 class="card-title">Dualshock 4 Controller</h4>
+<div class ="scrollable">
+<p class="card-text">The DualShock 4 is PlayStation 4's primary controller; it maintains a similar design to previous iterations of the
+  DualShock series, but with additional features and design refinements. Among other tweaks, the caps of the analog sticks were given a
+  concave design (similar to the Xbox 360 controller), the shape of the triggers and shoulder buttons were refined, the D-pad buttons were
+  given a steeper downward angle to provide a resting space in the center for the user's thumb, and the hand grips were made thicker and
+  given microtexturing to improve their feel.
+ </p>
+
+</div>
+  <button type="submit" class="btn btn-dark btn-lg mt-4 bid-button mt-auto" data-toggle="modal" data-target="#bid1">Bid</button>
+
+</div>
+</div>
+
+</div>
+
+<div class="col-md-6 col-lg-4">
+
+<div class="card mb-3">
+<img class="card-img-top" src="img/adidas.png" alt="Adidas shoes">
+<div class="card-body card-hght d-flex flex-column">
+<h4 class="card-title">Adidas Superstar</h4>
+<div class ="scrollable">
+<p class="card-text"> The adidas Superstar sneaker gets a subtle midsole update to create the Superstar BOOST and Superstar BOUNCE.
+  Keeping true to the iconic design, the Superstar with BOOST and BOUNCE midsoles have been restored from the ground up.
+ </p>
+ <p>
+  Constructed with premium leather in an all black or all white color, and finished with stylish gold branding details. The BOOST midsole is
+  concealed by the original tooling, and adds a whole new layer of comfort to a lifestyle sneaker classic. You can see the BOOST technology
+  in the undersole and through a panel on the inner arch.
+ </p>
+</div>
+  <button type="submit" class="btn btn-dark btn-lg mt-4 bid-button mt-auto" data-toggle="modal" data-target="#bid1">Bid</button>
+
+</div>
+</div>
+
+</div>
+
+<div class="col-md-6 col-lg-4">
+
+<div class="card mb-3">
+<img class="card-img-top" src="img/wine.png" alt="Bottle of Penfolds Grange">
+<div class="card-body card-hght d-flex flex-column">
+<h4 class="card-title">Penfolds Grange</h4>
+<div class ="scrollable">
+<p class="card-text">Penfolds Grange (until the 1989 vintage labelled Penfolds Grange Hermitage) is an Australian wine, made predominantly
+  from the Shiraz (Syrah) grape and usually a small percentage of Cabernet Sauvignon. It is widely considered one of Australia's
+  "first growth" and its most collectable wine.
+ </p>
+ <p class = "card-text">
+  The term "Hermitage", the name of a French wine appellation, was commonly used in Australia as another synonym for Shiraz or Syrah.
+  Penfolds is owned by Treasury Wine Estates.
+ </p>
+</div>
+  <button type="submit" class="btn btn-dark btn-lg mt-4 bid-button mt-auto" data-toggle="modal" data-target="#bid1">Bid</button>
 
 </div>
 </div>
@@ -122,10 +173,76 @@
   <!-- /things to buy-->
 </div> <!-- /container -->
 
+<!-- footer -->
+<footer class = "bg-dark text-light mt-4 py-4">
+  <div class = "container">
+<div class="row py-3">
+<div class="col-md-7">
+
+<ul class="nav">
+<li class="nav-item">
+<a class="nav-link text-light" href="#">Community</a>
+</li>
+<li class="nav-item">
+<a class="nav-link text-light" href="#">Sponsors</a>
+</li>
+<li class="nav-item">
+
+
+<div class="btn-group dropup">
+<button type="button" class="btn btn-outline-light">Our partners</button>
+<button type="button" class="btn btn-outline-light dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+<span class="sr-only">Toggle Dropdown</span>
+</button>
+<div class="dropdown-menu">
+<a class="dropdown-item" href="#">Real-estate World</a>
+<a class="dropdown-item" href="#">Travel World</a>
+<a class="dropdown-item" href="#">Business World</a>
+<a class="dropdown-item" href="#">Economy World</a>
+</div>
+</div>
+
+</li>
+</ul>
+
+</div>
+<div class="col-md text-md-right">
+<small>&copy; 2018 Auction World &amp; Matija Rabuzin</small>
+</div>
+</div>
+</div>  <!-- /container -->
+</footer>
+<!-- /footer -->
+
+<!--=====================================
+     FORM MODAL BID
+    =====================================-->
+
+<div class="modal" id="bid1" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-dark text-white">
+        <h5 class="modal-title">Bid!</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Modal body text goes here.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
   </body>
   </html>
