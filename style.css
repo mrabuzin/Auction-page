@@ -15,8 +15,10 @@ body {
 }
 
 .jumbotron {
-  background-image: url(img/online-store.png);
-  background-size:cover;
+  background: url(img/bg-pic.jpg);
+  background-position: 0% 25%;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .custom-heading {
@@ -37,12 +39,26 @@ body {
   height: 381px;
 }
 
+.courgette {
+  font-family: 'Courgette',cursive;
+  font-weight: bold;
+}
+
+#flashMessage {
+    color: white;
+    background-color: #64ce83;
+    padding: 15px;
+    border-radius: 5px;
+    display: block;
+    width: calc(100% - 100px);
+    margin-bottom: 40px;
+}
 /*
  *  Card scrollbar
  */
  .scrollable {
      height: 230px;
-     overflow: hidden;;
+     overflow: hidden;
  }
 
  .scrollable:hover {
@@ -67,12 +83,12 @@ body {
  }
 
  /*
-  *  Carusel
+  *  Carousel
   */
 
   #items-carousel {
-    height: 300px;
-    width:500px;
+    height: 50%;
+    width:75%;
   }
 
   .carousel-indicators li {
@@ -81,4 +97,40 @@ body {
 
   .carousel-indicators .active {
       background-color:grey;
+  }
+
+  /* Media */
+
+  @media(max-width: 1200px) {
+    .display-3 {
+      font-size: 60px
+    }
+    .lead {
+      font-size: 18px;
+    }
+  }
+
+  @media(max-width: 1000px) {
+    .display-3 {
+      font-size: 40px;
+    }
+    .lead {
+      font-size: 12px;
+    }
+  }
+
+  @media(max-width: 770px) {
+    .display-3 {
+      font-size: 28px;
+    }
+    .lead {
+      font-size: 10px;
+    }
+  }
+
+  @media(max-width: 410px) {
+    .display-3 {
+      font-size: 20px;
+    }
+
   }
